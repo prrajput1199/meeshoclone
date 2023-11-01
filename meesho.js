@@ -12,8 +12,50 @@ import BagsAndFootwear from "./data/bagsfootwears.js"
  let searchbox1=document.querySelector(".searchinput")
  let recentlistsicon1=document.querySelector(".recentlistsicon")
  let listsofrecents1=document.querySelector(".listsofrecents")
- let recentinputs1=[]
+ let recentinputs1=[];
+//  let icon=document.querySelector(".bx-menu");
+//  let navbar=document.getElementsByClassName("navbar");
 
+let Icon = document.querySelector('#menu-icon');
+let navbar1 = document.querySelector('.navbar');
+
+Icon.onclick=()=>{
+    Icon.classList.toggle('bx-x');
+    if(navbar1.style.display=="block"){
+        navbar1.style.display="none";
+    }
+    else{
+        navbar1.style.display="block";
+    }
+}
+
+
+
+// document.querySelector(".list1").onclick =()=>{
+//     if(document.querySelector("#womenethnic1").style.display=="block"){
+//         document.querySelector("#womenethnic1").style.display="none";
+//     }
+//     else{
+//         document.querySelector("#womenethnic1").style.display="block";
+//     }
+// }
+
+// document.querySelector(".list1").onclick =()=>{
+//     if(document.querySelector(".submenucontainer").style.display=="block"){
+//         document.querySelector(".submenucontainer").style.display="none";
+//     }
+//     else{
+//         document.querySelector(".submenucontainer").style.display="block";
+//     }
+// }
+// document.querySelector(".list2").onclick =()=>{
+//     if(document.querySelector(".submenucontainer").style.display=="block"){
+//         document.querySelector(".submenucontainer").style.display="none";
+//     }
+//     else{
+//         document.querySelector(".submenucontainer").style.display="block";
+//     }
+// }
  searchbox1.addEventListener("keydown",()=>{
     if(searchbox1.value){
         document.getElementById("crossmarkid").style.display="block";
